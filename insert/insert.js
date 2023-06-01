@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
             console.log('Error in connection:- ', err)
         else {
             let db = conn.db('nodedb')
-            db.collection('products').insertOne(obj,(err)=>{
+            db.collection('employees').insertOne(obj,(err)=>{
                 if(err)
                     res.json({'insert':'Error '+err})
                 else{

@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
             console.log('Error in connection:- ', err)
         else {
             let db = conn.db('nodedb')
-            db.collection('products').updateOne({ p_id }, { $set: obj }, (err) => {
+            db.collection('employees').updateOne({ p_id }, { $set: obj }, (err) => {
                 if (err)
                     res.json({ 'update': 'Error ' + err })
                 else {

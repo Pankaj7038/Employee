@@ -15,7 +15,7 @@ router.get("/",(req, res)=>{
             console.log('Error in connection:- ',err)
         else{
             let db = conn.db("nodedb")
-            db.collection('products').find().toArray((err, array)=>{
+            db.collection('employees').find().toArray((err, array)=>{
                 if(err)
                     console.log(err)
                 else{
